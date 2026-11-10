@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú desplegable</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Mi menú desplegable</h1>
+        <p>Selecciona una de las siguientes opciones</p>
+
+        <section class="desplegable">
+
+            <button id="boton" aria-expanded="false"
+                    aria-controls="opciones">
+                <span id="seleccion">Selecciona una opción</span>
+                <span id="flecha">⌄</span>
+            </button>
+
+            <ul id="opciones" hidden>
+                <li><button type="button">Primera opción</button></li>
+                <li><button type="button">Segunda opción</button></li>
+                <li><button type="button">Tercera opción</button></li>
+                <li><button type="button">Cuarta opción</button></li>
+                <li><button type="button">Quinta opción</button></li>
+            </ul>
+
+        </section>
+
+        <p id="resultado"></p>
+
+    </main>
+
+</body>
+</html>
